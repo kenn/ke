@@ -1,9 +1,9 @@
-# ke
+# kennejima
 
 Kenn Ejima's Profile
 
 ## Usage
 
 ```bash
-npx ke
+npx kennejima
 ```

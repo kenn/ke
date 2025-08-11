@@ -10,4 +10,9 @@ const __dirname = dirname(__filename)
 const cardPath = join(__dirname, 'card.txt')
 const cardContent = readFileSync(cardPath, 'utf-8')
 
-chalkAnimation.pulse(cardContent)
+const animation = chalkAnimation.pulse(cardContent)
+
+setTimeout(() => {
+  animation.stop()
+  process.exit(0)
+}, 10000)

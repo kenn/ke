@@ -2,6 +2,8 @@
 
 Kenn Ejima's Profile
 
+![demo](./images/demo.gif)
+
 ## Usage
 
 ```bash

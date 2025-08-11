@@ -1,5 +1,5 @@
 import { execSync } from 'node:child_process'
-import { mkdirSync, rmSync } from 'node:fs'
+import { copyFileSync, mkdirSync, rmSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -16,6 +16,10 @@ execSync('npx tsc', { stdio: 'inherit', cwd: __dirname })
 // The shebang is already in the source file, just make it executable
 let distFile = join(__dirname, 'dist/index.js')
 execSync(`chmod +x ${distFile}`)
+
+// Copy card.txt to dist
+console.log('Copying card.txt...')
+copyFileSync(join(__dirname, 'src/card.txt'), join(__dirname, 'dist/card.txt'))
 
 // Remove test files from dist
 console.log('Removing test files...')

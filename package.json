@@ -1,0 +1,44 @@
+{
+  "name": "ke",
+  "version": "1.0.0",
+  "description": "Kenn Ejima",
+  "keywords": [
+    "profile"
+  ],
+  "type": "module",
+  "main": "./dist/index.js",
+  "bin": {
+    "ke": "./dist/index.js"
+  },
+  "author": "Kenn Ejima",
+  "license": "UNLICENSED",
+  "homepage": "https://github.com/kenn/ke#readme",
+  "bugs": {
+    "url": "https://github.com/kenn/ke/issues"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsx build.ts",
+    "dev": "tsx src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kenn/ke"
+  },
+  "dependencies": {
+    "chalk-animation": "^2.0.3"
+  },
+  "devDependencies": {
+    "@types/chalk-animation": "^1.6.3",
+    "@types/node": "^24.2.1",
+    "tsx": "^4.20.3",
+    "typescript": "^5.9.2"
+  }
+}
